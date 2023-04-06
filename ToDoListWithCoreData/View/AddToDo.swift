@@ -24,7 +24,6 @@ struct AddToDo: View {
             Form {
                 Section {
                     TextField("Title of ToDoItem", text: $title)
-                    TextField("Specifice of Title", text: $specifics)
                     
                     Picker("Category", selection: $category) {
                         ForEach(categories, id:\.self) {
@@ -35,17 +34,18 @@ struct AddToDo: View {
                 
                 Section {
                     TextEditor(text: $specifics)
-                    Picker("Importance", selection: $rating) {
-                        ForEach(0..<6) {
-                            Text(String($0))
-                        }
-                    }
+                    RatingView(rating: $rating)
+//                    Picker("Importance", selection: $rating) {
+//                        ForEach(0..<6) {
+//                            Text(String($0))
+//                        }
+//                    }
                 } header : {
                     Text("Write a specifice of title")
                 }
                 
                 Section {
-                    Button("Save") {
+                    Button("Save"){
                         // add the book
                         let newtodolist = Todolist(context: moc)
                         newtodolist.id = UUID()
@@ -56,8 +56,8 @@ struct AddToDo: View {
                         
                         try? moc.save()
                         dismiss()
-                        
                     }
+                    .foregroundColor(Color.red)
                 }
             }
             .navigationTitle("Add ToDoItem")
