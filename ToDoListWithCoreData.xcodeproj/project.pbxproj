@@ -12,6 +12,7 @@
 		ADA03C6329DE5C490077D566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA03C6229DE5C490077D566 /* Assets.xcassets */; };
 		ADA03C6629DE5C490077D566 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA03C6529DE5C490077D566 /* Preview Assets.xcassets */; };
 		ADA03C6E29DE6D530077D566 /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADA03C6C29DE6D530077D566 /* ToDoList.xcdatamodeld */; };
+		ADA03C7029DE6F1E0077D566 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA03C6F29DE6F1E0077D566 /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		ADA03C6229DE5C490077D566 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADA03C6529DE5C490077D566 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ADA03C6D29DE6D530077D566 /* ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList.xcdatamodel; sourceTree = "<group>"; };
+		ADA03C6F29DE6F1E0077D566 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				ADA03C5E29DE5C480077D566 /* ToDoListWithCoreDataApp.swift */,
 				ADA03C6029DE5C480077D566 /* ContentView.swift */,
 				ADA03C6C29DE6D530077D566 /* ToDoList.xcdatamodeld */,
+				ADA03C6F29DE6F1E0077D566 /* DataController.swift */,
 				ADA03C6229DE5C490077D566 /* Assets.xcassets */,
 				ADA03C6429DE5C490077D566 /* Preview Content */,
 			);
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADA03C6129DE5C480077D566 /* ContentView.swift in Sources */,
+				ADA03C7029DE6F1E0077D566 /* DataController.swift in Sources */,
 				ADA03C6E29DE6D530077D566 /* ToDoList.xcdatamodeld in Sources */,
 				ADA03C5F29DE5C480077D566 /* ToDoListWithCoreDataApp.swift in Sources */,
 			);
