@@ -1,0 +1,17 @@
+//
+//  ToDoListWithCoreDataApp.swift
+//  ToDoListWithCoreData
+//
+//  Created by 권정근 on 2023/04/06.
+//
+
+import SwiftUI
+
+@main
+struct ToDoListWithCoreDataApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
